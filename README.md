@@ -1,9 +1,9 @@
 
 # 📘 User Admin Portal (Laravel 10)
 
-Projeto desenvolvido como solução para o **Desafio Técnico – Desenvolvedor(a) PHP/Laravel Pleno/Sênior**.
+Projeto desenvolvido para **Estudos de Autenticação, MailDog, Controle Via Middleware e testes automatizados**.
 
-## ✅ Funcionalidades Entregues
+## ✅ Funcionalidades
 
 - Autenticação com **Laravel Sanctum**
 - Cadastro de usuários com preenchimento automático via **ViaCEP**
@@ -59,7 +59,16 @@ DB_DATABASE=/var/www/database/database.sqlite
 ```bash
 docker compose up --build -d
 ```
+### 5. Acesse o terminal da aplicação
 
+```bash
+docker exec -it UserAdminPortal-app bash
+```
+### 6. Migre as configurações do banco
+
+```bash
+php artisan migrate
+```
 ---
 
 ## 🔐 Endpoints Principais
@@ -170,4 +179,3 @@ O projeto foi desenvolvido com foco em:
 - Arquitetura escalável
 - Testabilidade
 - Segurança em rotas e dados
-- Alinhado 100% ao PDF do desafio técnico
